@@ -5,6 +5,5 @@
 from frappe.model.document import Document
 
 
-class Login(Document):
+class TrainerSlots(Document):
 	pass
-

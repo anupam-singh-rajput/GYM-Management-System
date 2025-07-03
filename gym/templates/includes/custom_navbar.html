@@ -1,0 +1,20 @@
+<!-- 🔷 Custom Navbar Template -->
+<nav style="background: #1f2937; padding: 1rem;">
+    <ul style="list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0;">
+        {% set nav_links = [
+            {'label': 'Abouts', 'route': '/about'},
+            {'label': 'Setting', 'route': '/settings'},
+            {'label': 'Gym Member', 'route': '/gym-membership'},
+            {'label': 'Gym Trainer', 'route': '/gym-trainer'}
+        ] %}
+
+        {% for link in nav_links %}
+            <li>
+                <a href="{{ link.route }}" style="color: white; text-decoration: none;" 
+                   onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color='white'">
+                   {{ link.label }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

@@ -1,47 +1,33 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-06-26 11:21:08.957399",
+ "creation": "2025-07-02 18:19:38.505398",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "email",
-  "role",
-  "password"
+  "name1",
+  "slots"
  ],
  "fields": [
   {
-   "fieldname": "email",
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "TrainerResgistration"
+  },
+  {
+   "fieldname": "slots",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "is_virtual": 1,
-   "label": "Email",
-   "reqd": 1
-  },
-  {
-   "fieldname": "password",
-   "fieldtype": "Password",
-   "in_list_view": 1,
-   "is_virtual": 1,
-   "label": "Password",
-   "reqd": 1
-  },
-  {
-   "fieldname": "role",
-   "fieldtype": "Select",
-   "is_virtual": 1,
-   "label": "Role",
-   "options": "Admin\nTrainer\nUser",
-   "reqd": 1
+   "label": "Slots"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-02 10:54:14.625009",
+ "modified": "2025-07-02 18:20:47.397421",
  "modified_by": "Administrator",
  "module": "GYM",
- "name": "Login",
+ "name": "Trainer",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-02 11:40:49.304186",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "specialization",
+  "name1",
+  "slots",
+  "booked"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "TrainerResgistration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "slots",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Slots",
+   "options": "6am-8am\n8am-10am\n10am-12am\n4pm-6pm\n6pm-8pm\n8pm-10pm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Specialization",
+   "options": "Categories",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booked",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Booked",
+   "options": "No\nYes",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-02 18:52:35.587334",
+ "modified_by": "Administrator",
+ "module": "GYM",
+ "name": "TrainerSlots",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -5,13 +5,14 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_xtar",
   "name1",
   "email",
+  "password_qogm",
   "contact",
-  "upload_image",
   "address",
-  "column_break_cewb",
-  "table_hxco"
+  "specialization",
+  "gender"
  ],
  "fields": [
   {
@@ -36,12 +37,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "upload_image",
-   "fieldtype": "Attach Image",
-   "label": "Upload Image",
-   "reqd": 1
-  },
-  {
    "fieldname": "address",
    "fieldtype": "Small Text",
    "in_list_view": 1,
@@ -49,22 +44,36 @@
    "reqd": 1
   },
   {
-   "fieldname": "column_break_cewb",
-   "fieldtype": "Column Break"
+   "fieldname": "section_break_xtar",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "table_hxco",
-   "fieldtype": "Table",
-   "options": "Trainer Details"
+   "fieldname": "password_qogm",
+   "fieldtype": "Password",
+   "label": "Password"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "label": "Specialization",
+   "options": "Categories",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-25 16:33:20.373916",
+ "modified": "2025-07-02 11:58:23.594245",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "TrainerResgistration",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {

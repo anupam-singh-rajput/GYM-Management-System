@@ -242,7 +242,7 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-
+import gym.gym.api
 fixtures = [
     {"doctype": "DocType", "filters": [["module", "=", "Gym"]]},
 ]

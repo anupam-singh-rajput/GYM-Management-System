@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{email}",
  "creation": "2025-06-25 16:43:47.016917",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,19 +9,21 @@
   "user_info_section",
   "name1",
   "email",
+  "password",
   "contact",
   "gender",
-  "upload_image",
   "address",
   "plans",
+  "locker",
+  "available",
   "section_break_mvct",
   "joining_date",
   "column_break_gggn",
   "ending_date",
-  "section_break_ufmd",
-  "table_ttud",
-  "section_break_azwg",
-  "select_trainer"
+  "section_break_lvae",
+  "metrics_update",
+  "specialization",
+  "trainer"
  ],
  "fields": [
   {
@@ -50,11 +53,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "upload_image",
-   "fieldtype": "Attach Image",
-   "label": "Upload Image"
-  },
-  {
    "fieldname": "address",
    "fieldtype": "Small Text",
    "in_list_view": 1,
@@ -63,15 +61,8 @@
   },
   {
    "fieldname": "joining_date",
-   "fieldtype": "Datetime",
+   "fieldtype": "Date",
    "label": "Joining Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "select_trainer",
-   "fieldtype": "Table",
-   "label": "Select Trainer ",
-   "options": "TrainerBooking",
    "reqd": 1
   },
   {
@@ -79,13 +70,6 @@
    "fieldtype": "Select",
    "label": "Gender",
    "options": "Male\nFemale",
-   "reqd": 1
-  },
-  {
-   "fieldname": "table_ttud",
-   "fieldtype": "Table",
-   "label": "Metrics",
-   "options": "Metrics Update",
    "reqd": 1
   },
   {
@@ -98,32 +82,63 @@
   {
    "fieldname": "ending_date",
    "fieldtype": "Date",
-   "label": "Ending Date"
+   "label": "Ending Date",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_mvct",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "section_break_ufmd",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "section_break_azwg",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "column_break_gggn",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "locker",
+   "fieldtype": "Int",
+   "label": "Locker"
+  },
+  {
+   "fieldname": "available",
+   "fieldtype": "Data",
+   "label": "Available"
+  },
+  {
+   "fieldname": "section_break_lvae",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "metrics_update",
+   "fieldtype": "Table",
+   "label": "Metrics Update",
+   "options": "Metrics Update"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "label": "Specialization",
+   "options": "Categories"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Select",
+   "label": "Trainer"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-26 13:52:55.528252",
+ "modified": "2025-07-03 15:13:52.547748",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "GYM Membership",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
