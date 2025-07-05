@@ -270,11 +270,11 @@ fixtures = [
 "Web Form",
 {
 "doctype": "Web Page",
-"filters": [["module", "=", "Jim"]]
+"filters": [["module", "=", "GYM"]]
 },
 {
 "doctype": "Web Template",
-"filters": [["module", "=", "Jim"]]
+"filters": [["module", "=", "GYM"]]
 },
 {
 "doctype": "Website Settings"

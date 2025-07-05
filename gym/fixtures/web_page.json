@@ -1,1 +1,56 @@
-[]
+[
+ {
+  "breadcrumbs": null,
+  "content_type": "Page Builder",
+  "context_script": null,
+  "css": ".full-width-image {\n  width: 100vw !important;\n  height: 100vh !important;\n  object-fit: cover !important;\n  display: block !important;\n  margin: 0 !important;\n  padding: 0 !important;\n}\nsection[data-section-template=\"Full Width Image\"] .container {\n  width: 100vw !important;\n  max-width: 100vw !important;\n  padding: 0 !important;\n  margin: 0 !important;\n}",
+  "docstatus": 0,
+  "doctype": "Web Page",
+  "dynamic_route": 1,
+  "dynamic_template": 0,
+  "enable_comments": 0,
+  "end_date": null,
+  "full_width": 1,
+  "header": null,
+  "insert_style": 1,
+  "javascript": "",
+  "main_section": null,
+  "main_section_html": null,
+  "main_section_md": null,
+  "meta_description": null,
+  "meta_image": null,
+  "meta_title": null,
+  "modified": "2025-07-05 17:19:43.480872",
+  "module": "GYM",
+  "name": "signup",
+  "page_blocks": [
+   {
+    "add_background_image": 0,
+    "add_border_at_bottom": 0,
+    "add_border_at_top": 0,
+    "add_bottom_padding": 1,
+    "add_container": 1,
+    "add_shade": 0,
+    "add_top_padding": 0,
+    "background_image": null,
+    "css_class": null,
+    "hide_block": 0,
+    "parent": "signup",
+    "parentfield": "page_blocks",
+    "parenttype": "Web Page",
+    "section_id": null,
+    "web_template": "Full Width Image",
+    "web_template_values": "{\"url\":\"https://img.freepik.com/premium-photo/empty-gym-with-exercise-equipment-weights_239711-39172.jpg?semt=ais_hybrid&w=740\"}"
+   }
+  ],
+  "published": 1,
+  "route": "landingpage",
+  "show_sidebar": 0,
+  "show_title": 0,
+  "slideshow": null,
+  "start_date": null,
+  "text_align": "Left",
+  "title": "Freestyle",
+  "website_sidebar": null
+ }
+]
