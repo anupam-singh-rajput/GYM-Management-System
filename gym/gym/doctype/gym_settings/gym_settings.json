@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-05 14:11:21.066188",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "default_price_1m",
+  "default_price_3m",
+  "default_price_1y",
+  "total_lockers",
+  "notification_email",
+  "locker_price_1m"
+ ],
+ "fields": [
+  {
+   "default": "5000",
+   "fieldname": "default_price_1m",
+   "fieldtype": "Currency",
+   "label": "Default Membership Price (1 Month)"
+  },
+  {
+   "default": "9000",
+   "fieldname": "default_price_3m",
+   "fieldtype": "Currency",
+   "label": "Default Membership Price (3 Months)"
+  },
+  {
+   "default": "14000",
+   "fieldname": "default_price_1y",
+   "fieldtype": "Currency",
+   "label": "Default Membership Price (1 Year)"
+  },
+  {
+   "default": "30",
+   "fieldname": "total_lockers",
+   "fieldtype": "Int",
+   "label": "Total Lockers"
+  },
+  {
+   "default": "asrgym@gmail.com",
+   "fieldname": "notification_email",
+   "fieldtype": "Data",
+   "label": "Notification Email"
+  },
+  {
+   "default": "200",
+   "fieldname": "locker_price_1m",
+   "fieldtype": "Float",
+   "label": "Locker Price"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-07-05 15:23:12.874038",
+ "modified_by": "Administrator",
+ "module": "GYM",
+ "name": "Gym Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

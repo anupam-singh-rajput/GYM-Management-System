@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "format:{email}",
+ "autoname": "autoincrement",
  "creation": "2025-06-25 16:43:47.016917",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -15,7 +14,7 @@
   "address",
   "plans",
   "locker",
-  "available",
+  "locker_description",
   "section_break_mvct",
   "joining_date",
   "column_break_gggn",
@@ -23,7 +22,8 @@
   "section_break_lvae",
   "metrics_update",
   "specialization",
-  "trainer"
+  "trainer",
+  "final_price"
  ],
  "fields": [
   {
@@ -95,13 +95,9 @@
   },
   {
    "fieldname": "locker",
-   "fieldtype": "Int",
-   "label": "Locker"
-  },
-  {
-   "fieldname": "available",
-   "fieldtype": "Data",
-   "label": "Available"
+   "fieldtype": "Select",
+   "label": "Locker",
+   "options": "0\n1\n2"
   },
   {
    "fieldname": "section_break_lvae",
@@ -129,16 +125,28 @@
    "fieldname": "trainer",
    "fieldtype": "Select",
    "label": "Trainer"
+  },
+  {
+   "fieldname": "locker_description",
+   "fieldtype": "Data",
+   "label": "Locker Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_price",
+   "fieldtype": "Currency",
+   "label": "Final Price",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-03 15:13:52.547748",
+ "modified": "2025-07-05 15:12:34.036441",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "GYM Membership",
- "naming_rule": "Expression",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
