@@ -243,8 +243,40 @@ app_license = "mit"
 # }
 
 import gym.gym.api
+# fixtures = [
+#     {"doctype": "DocType", "filters": [["module", "=", "Gym"]]},
+# ]
+
 fixtures = [
-    {"doctype": "DocType", "filters": [["module", "=", "Gym"]]},
+{
+"doctype": "DocType",
+"filters": [["name", "in", [
+"GYM Membership",
+"Gym Settings",
+"TrainerResgistration",
+"LockerSetting",
+"Metrics Update",
+]]]
+},
+"Custom Field",
+"Client Script",
+"Server Script",
+"Property Setter",
+"Workflow",
+"Print Format",
+"Report",
+"Custom DocPerm",
+"Role",
+"Web Form",
+{
+"doctype": "Web Page",
+"filters": [["module", "=", "Jim"]]
+},
+{
+"doctype": "Web Template",
+"filters": [["module", "=", "Jim"]]
+},
+{
+"doctype": "Website Settings"
+}
 ]
-
-
