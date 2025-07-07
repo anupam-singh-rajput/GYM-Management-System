@@ -1,0 +1,51 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Categories",
+  "modified": "2025-06-25 16:14:32.073004",
+  "name": "3",
+  "specialization": "Calisthenics"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Categories",
+  "modified": "2025-06-25 16:14:41.278821",
+  "name": "4",
+  "specialization": "Powerlifting"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Categories",
+  "modified": "2025-06-25 16:14:48.502652",
+  "name": "5",
+  "specialization": "Zumba"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Categories",
+  "modified": "2025-06-25 16:14:56.457486",
+  "name": "6",
+  "specialization": "Kickboxing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Categories",
+  "modified": "2025-06-25 16:15:09.471242",
+  "name": "7",
+  "specialization": "MMA(Mixed Martial Arts)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Categories",
+  "modified": "2025-06-25 16:14:24.281454",
+  "name": "2",
+  "specialization": "CrossFit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Categories",
+  "modified": "2025-06-25 15:45:13.259435",
+  "name": "1",
+  "specialization": "Gym/Strength Training"
+ }
+]

@@ -248,35 +248,46 @@ import gym.gym.api
 # ]
 
 fixtures = [
-{
-"doctype": "DocType",
-"filters": [["name", "in", [
-"GYM Membership",
-"Gym Settings",
-"TrainerResgistration",
-"LockerSetting",
-"Metrics Update",
-]]]
-},
-"Custom Field",
-"Client Script",
-"Server Script",
-"Property Setter",
-"Workflow",
-"Print Format",
-"Report",
-"Custom DocPerm",
-"Role",
-"Web Form",
-{
-"doctype": "Web Page",
-"filters": [["module", "=", "GYM"]]
-},
-{
-"doctype": "Web Template",
-"filters": [["module", "=", "GYM"]]
-},
-{
-"doctype": "Website Settings"
-}
+    "Custom Field",
+    "Client Script",
+    "Server Script",
+    "Property Setter",
+    "Workflow",
+    "Print Format",
+    "Report",
+    "Custom DocPerm",
+    "Role",
+    "Web Form",
+    {
+        "doctype": "GYM Membership",
+        "filters": []
+    },
+    {
+        "doctype": "Gym Settings",
+        "filters": []
+    },
+    {
+        "doctype": "TrainerResgistration",
+        "filters": []
+    },
+    {
+        "doctype": "Categories",
+        "filters": []
+    },
+    {
+        "doctype": "Metrics Update",
+        "filters": []
+    },
+    {
+        "doctype": "Web Page",
+        "filters": [["module", "=", "GYM"]]
+    },
+    {
+        "doctype": "Web Template",
+        "filters": [["module", "=", "GYM"]]
+    },
+    {
+        "doctype": "Website Settings",
+        "filters": []
+    }
 ]

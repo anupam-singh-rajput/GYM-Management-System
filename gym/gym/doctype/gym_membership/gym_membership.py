@@ -4,7 +4,6 @@
 # import frappe
 from frappe.model.document import Document
 
-
 class GYMMembership(Document):
 	def set_locker_description(self):
 		count = int(self.locker or 0)

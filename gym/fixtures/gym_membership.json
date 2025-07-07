@@ -1,0 +1,66 @@
+[
+ {
+  "address": "asd",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "GYM Membership",
+  "email": "sneha",
+  "ending_date": "2025-10-01",
+  "final_price": 0.0,
+  "gender": "Male",
+  "joining_date": "2025-07-01",
+  "locker": "1",
+  "locker_description": null,
+  "metrics_update": [
+   {
+    "bmi": 2.18,
+    "calorie_intake": 2009.0,
+    "date": "2025-07-01",
+    "height": 6.0,
+    "parent": 4,
+    "parentfield": "metrics_update",
+    "parenttype": "GYM Membership",
+    "weight": 6.0
+   }
+  ],
+  "modified": "2025-07-05 14:01:58.270827",
+  "name": 4,
+  "name1": "sneha",
+  "password": "***********",
+  "plans": "3 Months  >> (₹9000)",
+  "specialization": "1",
+  "trainer": "r2bvfh6ung"
+ },
+ {
+  "address": "ambivali",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "GYM Membership",
+  "email": "anupam@gmail.com",
+  "ending_date": "2025-10-02",
+  "final_price": 9400.0,
+  "gender": "Male",
+  "joining_date": "2025-07-02",
+  "locker": "2",
+  "locker_description": "Assigned Lockers: L628, L406",
+  "metrics_update": [
+   {
+    "bmi": 4.44,
+    "calorie_intake": 2500.0,
+    "date": "2025-07-01",
+    "height": 6.0,
+    "parent": 5,
+    "parentfield": "metrics_update",
+    "parenttype": "GYM Membership",
+    "weight": 70.0
+   }
+  ],
+  "modified": "2025-07-05 16:20:23.527687",
+  "name": 5,
+  "name1": "Anupam Singh",
+  "password": "*********",
+  "plans": "3 Months  >> (₹9000)",
+  "specialization": "6",
+  "trainer": "3mslgbj21a"
+ }
+]

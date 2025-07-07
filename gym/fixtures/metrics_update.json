@@ -1,0 +1,30 @@
+[
+ {
+  "bmi": 2.18,
+  "calorie_intake": 2009.0,
+  "date": "2025-07-01",
+  "docstatus": 0,
+  "doctype": "Metrics Update",
+  "height": 6.0,
+  "modified": "2025-07-05 14:01:58.270827",
+  "name": "nfemvgtgb7",
+  "parent": "4",
+  "parentfield": "metrics_update",
+  "parenttype": "GYM Membership",
+  "weight": 6.0
+ },
+ {
+  "bmi": 4.44,
+  "calorie_intake": 2500.0,
+  "date": "2025-07-01",
+  "docstatus": 0,
+  "doctype": "Metrics Update",
+  "height": 6.0,
+  "modified": "2025-07-05 16:20:23.527687",
+  "name": "8isaiuq66p",
+  "parent": "5",
+  "parentfield": "metrics_update",
+  "parenttype": "GYM Membership",
+  "weight": 70.0
+ }
+]

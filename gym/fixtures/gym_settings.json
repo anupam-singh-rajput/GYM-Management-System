@@ -1,0 +1,14 @@
+[
+ {
+  "default_price_1m": 5000.0,
+  "default_price_1y": 14000.0,
+  "default_price_3m": 9000.0,
+  "docstatus": 0,
+  "doctype": "Gym Settings",
+  "locker_price_1m": 200.0,
+  "modified": null,
+  "name": "Gym Settings",
+  "notification_email": "asrgym@gmail.com",
+  "total_lockers": 30
+ }
+]
