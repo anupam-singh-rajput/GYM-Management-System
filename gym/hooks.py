@@ -246,20 +246,26 @@ import gym.gym.api
 # fixtures = [
 #     {"doctype": "DocType", "filters": [["module", "=", "Gym"]]},
 # ]
+website_route_rules = [
+{"from_route": "/member-details", "to_route": "member_details"}
+]
 
 fixtures = [
-    "Custom Field",
+
     "Client Script",
-    "Server Script",
     "Property Setter",
-    "Workflow",
-    "Print Format",
     "Report",
-    "Custom DocPerm",
-    "Role",
     "Web Form",
     {
+        "doctype": "Gym Members",
+        "filters": []
+    },
+    {
         "doctype": "GYM Membership",
+        "filters": []
+    },
+    {
+        "doctype": "BMI",
         "filters": []
     },
     {
@@ -267,7 +273,7 @@ fixtures = [
         "filters": []
     },
     {
-        "doctype": "TrainerResgistration",
+        "doctype": "TrainerReg",
         "filters": []
     },
     {
@@ -275,7 +281,23 @@ fixtures = [
         "filters": []
     },
     {
+        "doctype": "Trainer Rating",
+        "filters": []
+    },
+    {
+        "doctype": "WorkoutPlan",
+        "filters": []
+    },
+    {
+        "doctype": "Available Locker",
+        "filters": []
+    },
+    {
         "doctype": "Metrics Update",
+        "filters": []
+    },
+    {
+        "doctype": "Gym Class Booking",
         "filters": []
     },
     {

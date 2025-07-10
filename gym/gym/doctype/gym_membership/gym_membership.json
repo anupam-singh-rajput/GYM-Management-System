@@ -1,28 +1,20 @@
 {
  "actions": [],
- "autoname": "autoincrement",
+ "autoname": "format:{email}",
  "creation": "2025-06-25 16:43:47.016917",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "user_info_section",
-  "name1",
   "email",
-  "password",
   "contact",
   "gender",
   "address",
   "plans",
-  "locker",
-  "locker_description",
-  "section_break_mvct",
   "joining_date",
-  "column_break_gggn",
   "ending_date",
-  "section_break_lvae",
-  "metrics_update",
-  "specialization",
-  "trainer",
+  "assign_locker",
+  "available_locker",
   "final_price"
  ],
  "fields": [
@@ -32,17 +24,11 @@
    "label": "User Info"
   },
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1
-  },
-  {
    "fieldname": "email",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Email",
+   "options": "Gym Members",
    "reqd": 1
   },
   {
@@ -76,61 +62,27 @@
    "fieldname": "plans",
    "fieldtype": "Select",
    "label": "Membership Plan",
-   "options": "1 Month >> (\u20b95000)\n3 Months  >> (\u20b99000)\n1 Year >> (\u20b914000)",
+   "options": "1 Month (\u20b95000)\n3 Months (\u20b99000)\n1 Year (\u20b914000)",
    "reqd": 1
   },
   {
    "fieldname": "ending_date",
    "fieldtype": "Date",
    "label": "Ending Date",
-   "read_only": 1
-  },
-  {
-   "fieldname": "section_break_mvct",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_gggn",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "locker",
-   "fieldtype": "Select",
-   "label": "Locker",
-   "options": "0\n1\n2"
-  },
-  {
-   "fieldname": "section_break_lvae",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "metrics_update",
-   "fieldtype": "Table",
-   "label": "Metrics Update",
-   "options": "Metrics Update"
-  },
-  {
-   "fieldname": "password",
-   "fieldtype": "Password",
-   "label": "Password",
+   "read_only": 1,
    "reqd": 1
   },
   {
-   "fieldname": "specialization",
-   "fieldtype": "Link",
-   "label": "Specialization",
-   "options": "Categories"
-  },
-  {
-   "fieldname": "trainer",
+   "fieldname": "assign_locker",
    "fieldtype": "Select",
-   "label": "Trainer"
+   "label": "Assign Locker",
+   "options": "Yes\nNo"
   },
   {
-   "fieldname": "locker_description",
-   "fieldtype": "Data",
-   "label": "Locker Description",
-   "read_only": 1
+   "fieldname": "available_locker",
+   "fieldtype": "Link",
+   "label": "Available locker",
+   "options": "Available Locker"
   },
   {
    "fieldname": "final_price",
@@ -142,11 +94,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-05 15:12:34.036441",
+ "modified": "2025-07-10 10:14:55.423625",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "GYM Membership",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -163,7 +115,9 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "email"
 }

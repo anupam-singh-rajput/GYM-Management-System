@@ -1,0 +1,66 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<style>
+  .navbar-brand{
+    display: none;
+  }
+</style>
+<div id="member-details">
+  <h2>Member Details</h2>
+  <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+  <p><strong>Contact:</strong> <span id="contact">Loading...</span></p>
+  <p><strong>Plan:</strong> <span id="plan">Loading...</span></p>
+  <p><strong>Joining Date:</strong> <span id="joining_date">Loading...</span></p>
+  <p><strong>Ending Date:</strong> <span id="ending_date">Loading...</span></p>
+  <p><strong>Remaining Days:</strong> <span id="remaining_days">Loading...</span></p>
+
+  <h3>Trainer Info</h3>
+  <p><strong>Name:</strong> <span id="trainer_name">Loading...</span></p>
+ 
+</div>
+
+<script>
+  frappe.ready(function() {
+    const email = localStorage.getItem('email');
+    if (!email) {
+      document.getElementById('member-details').innerHTML = "<p>Email not found in localStorage.</p>";
+      return;
+    }
+    console.log(email)
+    
+    frappe.call({
+      method: "gym.gym.api.get_member_details",
+      args: { email: email },
+      callback: function(response) {
+        if (response.message) {
+          const data = response.message;
+            console.log(data)
+          // Use correct keys as per your DocType
+          document.getElementById('email').innerText = data.email || 'N/A';
+          document.getElementById('contact').innerText = data.contact || 'N/A';
+          document.getElementById('plan').innerText = data.plan || 'N/A';
+          document.getElementById('joining_date').innerText = data.joining_date || 'N/A';
+          document.getElementById('ending_date').innerText = data.ending_date || 'N/A';
+          document.getElementById('remaining_days').innerText = data.remaining_days !== undefined ? data.remaining_days : 'N/A';
+
+          if (data.trainer) {
+            document.getElementById('trainer_name').innerText = data.trainer.name || 'N/A';
+           
+          } else {
+            document.getElementById('trainer_name').innerText = 'N/A';
+        
+          }
+        } else {
+          document.getElementById('member-details').innerHTML = "<p>No member data found.</p>";
+        }
+      },
+      error: function(err) {
+        document.getElementById('member-details').innerHTML = "<p>Error loading data.</p>";
+        console.error(err);
+      }
+    });
+  });
+</script>
+{% endblock %}
+

@@ -172,3 +172,83 @@ def get_membership_report(member_id):
     except Exception:
         frappe.log_error(frappe.get_traceback(), "Customer Report API Error")
         frappe.throw(_("Something went wrong while generating the report."))
+
+
+# gym/api.py or gym/auth.py (Create this file in your app if it doesn't exist)
+
+import frappe
+from frappe.auth import LoginManager
+from frappe import _
+
+@frappe.whitelist()
+def authenticate_user(email, password, role):
+    """Authenticate the user using email, password, and role."""
+    
+    # Step 1: Check if the email exists in the Gym Members table
+    gym_member = frappe.get_all(
+        "Gym Members", 
+        filters={"email": email}, 
+        fields=["name1", "role", "password"]  # Include plain-text password field
+    )
+
+    if not gym_member:
+        return {"success": False, "message": "Invalid email"}  # Return 'Invalid email' if not found
+
+    # Step 2: Retrieve the plain-text password stored in the database
+    stored_password = gym_member[0]["password"]
+    
+    # Step 3: Compare the plain-text password with the one stored in the database
+    if stored_password != password:
+        return {"success": False, "message": "Invalid password"}  # Return 'Invalid password' if not matched
+    
+    # Step 4: Check if the provided role matches the one in the database
+    if gym_member[0]["role"] != role:
+        return {"success": False, "message": "Invalid role"}  # Return 'Invalid role' if not matched
+
+    # Return success message with role
+    return {"success": True, "message": "Authentication successful", "role": gym_member[0]["role"]}
+
+
+
+import frappe
+from datetime import datetime
+
+@frappe.whitelist(allow_guest=True)
+def get_member_details(email):
+    # Fetch membership info
+  
+    membership = frappe.get_doc("GYM Membership", email)
+
+    # Calculate remaining days
+    today = datetime.today().date()
+    ending_date = membership.ending_date
+    remaining_days = (ending_date - today).days if ending_date else None
+
+    # Get assigned trainer from Gym Class Booking
+    booking = frappe.get_all("Gym Class Booking",
+                             filters={"email": email},
+                             fields=["trainer_name"],
+                             limit_page_length=1)
+
+    trainer_name = booking[0].trainer_name if booking else None
+    trainer_info = {}
+    
+    if trainer_name:
+        trainer = frappe.get_doc("TrainerReg", trainer_name)
+        trainer_info = {
+            "name": trainer.name1,
+            "email_id": trainer.email,
+            "contact_no": trainer.contact,
+            "address": trainer.address,
+            "gender": trainer.gender
+        }
+
+    return {
+        "email": membership.email,
+        "contact": membership.contact,
+        "plan": membership.plans,
+        "joining_date": membership.joining_date,
+        "ending_date": membership.ending_date,
+        "remaining_days": remaining_days,
+        "trainer": trainer_info
+    }

@@ -1,0 +1,72 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "jay@gmail.com",
+  "modified": "2025-07-09 18:44:57.057649",
+  "name": "jay@gmail.com",
+  "name1": "Jay Anjarlekar",
+  "password": "jay@gmail.com",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "sneha@gmail.com",
+  "modified": "2025-07-09 18:45:47.366696",
+  "name": "sneha@gmail.com",
+  "name1": "sneha",
+  "password": "sneha@gmail.com",
+  "role": "Trainer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "janhavi@gmail.com",
+  "modified": "2025-07-10 10:38:30.579334",
+  "name": "janhavi@gmail.com",
+  "name1": "Janhavi Kasurde",
+  "password": "janhavi@gmail.com",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "akash@gmail.com",
+  "modified": "2025-07-10 10:39:16.027768",
+  "name": "akash@gmail.com",
+  "name1": "Akash Deshmukh",
+  "password": "akash@gmail.com",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "anupam@gmail.com",
+  "modified": "2025-07-09 11:14:30.290765",
+  "name": "anupam@gmail.com",
+  "name1": "Anupam Singh",
+  "password": "abcd@1234",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "pradeepto@gmail.com",
+  "modified": "2025-07-09 14:31:02.238138",
+  "name": "pradeepto@gmail.com",
+  "name1": "Pradeepto",
+  "password": "pradeepto@gmail.com",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "jigar@gmail.com",
+  "modified": "2025-07-10 10:38:54.287272",
+  "name": "jigar@gmail.com",
+  "name1": "Jigar Gohil",
+  "password": "jigar@gmail.com",
+  "role": "User"
+ }
+]

@@ -1,1 +1,35 @@
-[]
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "GYM Membership",
+  "enabled": 1,
+  "modified": "2025-07-09 15:30:03.334347",
+  "module": "GYM",
+  "name": "Locker Handling",
+  "script": "frappe.ui.form.on('GYM Membership', {\n    // When assign_locker field changes\n    assign_locker: function(frm) {\n        if (frm.doc.assign_locker === \"Yes\") {\n            frm.set_df_property('available_locker', 'hidden', 0);\n        } else {\n            frm.set_df_property('available_locker', 'hidden', 1);\n            frm.set_value('available_locker', null);\n        }\n    },\n\n    // On form load / refresh\n    refresh: function(frm) {\n        if (frm.doc.assign_locker === \"Yes\") {\n            frm.set_df_property('available_locker', 'hidden', 0);\n        } else {\n            frm.set_df_property('available_locker', 'hidden', 1);\n            frm.set_value('available_locker', null);\n        }\n    },\n\n    // Optional: on available_locker change (if you want to do something)\n    available_locker: function(frm) {\n        // You can add any logic here if needed\n    },\n\n    // On form load: set filter for available_locker to exclude assigned lockers\n    onload: function(frm) {\n        // Fetch lockers already assigned to other memberships\n        frappe.call({\n            method: \"frappe.client.get_list\",\n            args: {\n                doctype: \"GYM Membership\",\n                filters: { \"assign_locker\": \"Yes\" },\n                fields: [\"available_locker\"]\n            },\n            callback: function(r) {\n                if (r.message) {\n                    // Collect assigned lockers in an array, excluding null/empty\n                    let assigned_lockers = r.message.map(d => d.available_locker).filter(l => l);\n                    frm.assigned_lockers = assigned_lockers;\n                    \n                    // Set query filter for available_locker field\n                    frm.set_query('available_locker', function() {\n                        return {\n                            filters: [\n                                [\"name\", \"not in\", assigned_lockers]\n                            ]\n                        };\n                    });\n                }\n            }\n        });\n\n        // Also set the query with empty array if no assigned lockers found\n        frm.set_query('available_locker', function() {\n            return {\n                filters: [\n                    [\"name\", \"not in\", frm.assigned_lockers || []]\n                ]\n            };\n        });\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "GYM Membership",
+  "enabled": 1,
+  "modified": "2025-07-09 15:38:09.007303",
+  "module": "GYM",
+  "name": "Ending date calculation",
+  "script": "frappe.ui.form.on('GYM Membership', {\n    plans: function(frm) {\n        auto_calculate_ending_date(frm);\n    },\n    joining_date: function(frm) {\n        auto_calculate_ending_date(frm);\n    }\n});\n\nconst PLAN_DURATION_DAYS = {\n    \"1 Month (₹5000)\": 30,\n    \"3 Months (₹9000)\": 90,\n    \"1 Year (₹14000)\": 365\n};\n\nfunction auto_calculate_ending_date(frm) {\n    const joining_date = frm.doc.joining_date;\n    const selected_plan = frm.doc.plans;\n\n    if (!joining_date || !selected_plan) {\n        frm.set_value('ending_date', null);\n        return;\n    }\n\n    const duration_days = PLAN_DURATION_DAYS[selected_plan];\n\n    if (!duration_days) {\n        frappe.msgprint(__('Invalid plan selected: ') + selected_plan);\n        frm.set_value('ending_date', null);\n        return;\n    }\n\n    const start_date = frappe.datetime.str_to_obj(joining_date);\n    const end_date = frappe.datetime.add_days(start_date, duration_days);\n    const end_date_str = frappe.datetime.obj_to_str(end_date);\n\n    frm.set_value('ending_date', end_date_str);\n}\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "GYM Membership",
+  "enabled": 1,
+  "modified": "2025-07-10 10:20:11.188141",
+  "module": "GYM",
+  "name": "Final Price Calculation",
+  "script": "frappe.ui.form.on('GYM Membership', {\n    refresh: function(frm) {\n        calculate_final_price(frm);\n    },\n    plans: function(frm) {\n        calculate_final_price(frm);\n    },\n    assign_locker: function(frm) {\n        calculate_final_price(frm);\n    }\n});\n\nfunction calculate_final_price(frm) {\n    if (!frm.doc.plans) return;\n\n    let plan_price = 0;\n    let locker_price = 0;\n\n    if (frm.doc.plans.includes(\"1 Month\")) {\n        plan_price = 5000;\n    } else if (frm.doc.plans.includes(\"3 Months\")) {\n        plan_price = 9000;\n    } else if (frm.doc.plans.includes(\"1 Year\")) {\n        plan_price = 14000;\n    }\n\n    if (frm.doc.assign_locker === \"Yes\") {\n        locker_price = 500;\n    }\n\n    const total = plan_price + locker_price;\n    frm.set_value('final_price', total);\n}\n",
+  "view": "Form"
+ }
+]

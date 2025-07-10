@@ -1,0 +1,93 @@
+[
+ {
+  "address": "Russia",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email": "khabib@gmail.com",
+  "gender": "Male",
+  "modified": "2025-07-09 18:59:07.567695",
+  "name": "Khabib",
+  "name1": "Khabib",
+  "password_qogm": "****************",
+  "specialization": "7"
+ },
+ {
+  "address": "USA",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email": "ronnie@gmail.com",
+  "gender": "Male",
+  "modified": "2025-07-09 18:59:53.724943",
+  "name": "Ronnie Coleman",
+  "name1": "Ronnie Coleman",
+  "password_qogm": "****************",
+  "specialization": "1"
+ },
+ {
+  "address": "Uttarpradesh",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email": "dipti@gmail.com",
+  "gender": "Female",
+  "modified": "2025-07-09 19:01:53.277220",
+  "name": "Dipti",
+  "name1": "Dipti",
+  "password_qogm": "***************",
+  "specialization": "5"
+ },
+ {
+  "address": "ambivali",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email": "anupam@gmail.com",
+  "gender": "Male",
+  "modified": "2025-07-09 19:02:37.815677",
+  "name": "Anupam",
+  "name1": "Anupam",
+  "password_qogm": "****************",
+  "specialization": "3"
+ },
+ {
+  "address": "Western Line",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email": "ashish@gmail.com",
+  "gender": "Male",
+  "modified": "2025-07-09 19:05:53.096106",
+  "name": "Ashish Sir",
+  "name1": "Ashish Sir",
+  "password_qogm": "****************",
+  "specialization": "6"
+ },
+ {
+  "address": "Digha",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email": "sehna.singh@gmail.com",
+  "gender": "Female",
+  "modified": "2025-07-10 09:40:16.706113",
+  "name": "Sneha Singh",
+  "name1": "Sneha Singh",
+  "password_qogm": "*********************",
+  "specialization": "5"
+ },
+ {
+  "address": "BDpur",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email": "jayanjarlekar@gmail.com",
+  "gender": "Male",
+  "modified": "2025-07-10 10:55:09.459607",
+  "name": "Jay Anjarlekar",
+  "name1": "Jay Anjarlekar",
+  "password_qogm": "***********************",
+  "specialization": "1"
+ }
+]

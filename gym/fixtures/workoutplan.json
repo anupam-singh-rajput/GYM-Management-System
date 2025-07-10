@@ -1,0 +1,26 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "WorkoutPlan",
+  "level": "Begineer",
+  "modified": "2025-07-10 11:04:27.675965",
+  "name": "Begineer",
+  "workout_plan": "Begineer Workout Plan\nDay                  Focus\nMonday           Fullbody\nTuesday          Cardio\nWednesday     Upper\nThursday         Core\nFriday              Lower\nSaturday         Stretch"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "WorkoutPlan",
+  "level": "Intermediate",
+  "modified": "2025-07-10 11:05:28.798219",
+  "name": "Intermediate",
+  "workout_plan": "Intermediate Workout Plan\nDay                     Focus\nMonday              Push\nTuesday             Pull\nWednesday       Core\nThursday           Legs\nFriday                HIIT\nSaturday           Mobility"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "WorkoutPlan",
+  "level": "Advanced",
+  "modified": "2025-07-10 11:06:20.934894",
+  "name": "Advanced",
+  "workout_plan": "Advanced Workout Plan\nDay                   Focus\nMonday            Strength\nTuesday           Hypertrophy\nWednesday     Plyometrics\nThursday         Power\nFriday              Endurance\nSaturday         Recovery/Yoga"
+ }
+]
