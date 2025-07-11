@@ -251,21 +251,19 @@ website_route_rules = [
 ]
 
 fixtures = [
-    "Role",
-    "Custom DocPerm",
-    "Client Script",
+        "Client Script",
     "Property Setter",
     "Report",
     "Web Form",
-     {
-        "doctype": "Role",
-        "filters": [["name", "in", ["Gym Member", "Gym Trainer", "Gym Admin"]]]
+        {
+    "doctype": "Role",
+    "filters": [["name", "in", ["Gym Member", "Gym Trainer", "Gym Admin"]]]
     },
     {
-        "doctype": "Custom DocPerm",
-        "filters": [["role", "in", ["Gym Member", "Gym Trainer", "Gym Admin"]]]
+    "doctype": "Custom DocPerm",
+    "filters": [["role", "in", ["Gym Member", "Gym Trainer", "Gym Admin"]]]
     },
-    {
+        {
         "doctype": "Gym Members",
         "filters": []
     },
