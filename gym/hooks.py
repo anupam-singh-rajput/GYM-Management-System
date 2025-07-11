@@ -257,6 +257,14 @@ fixtures = [
     "Property Setter",
     "Report",
     "Web Form",
+     {
+        "doctype": "Role",
+        "filters": [["name", "in", ["Gym Member", "Gym Trainer", "Gym Admin"]]]
+    },
+    {
+        "doctype": "Custom DocPerm",
+        "filters": [["role", "in", ["Gym Member", "Gym Trainer", "Gym Admin"]]]
+    },
     {
         "doctype": "Gym Members",
         "filters": []
@@ -283,10 +291,6 @@ fixtures = [
     },
     {
         "doctype": "Trainer Rating",
-        "filters": []
-    },
-    {
-        "doctype": "User",
         "filters": []
     },
     {
