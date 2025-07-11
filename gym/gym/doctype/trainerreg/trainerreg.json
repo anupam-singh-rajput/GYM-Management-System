@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field:name1",
+ "autoname": "format:T-{###}",
  "creation": "2025-06-25 13:59:33.834514",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,7 +8,6 @@
   "section_break_xtar",
   "name1",
   "email",
-  "password_qogm",
   "contact",
   "address",
   "specialization",
@@ -28,6 +27,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Email",
+   "options": "Gym Members",
    "reqd": 1
   },
   {
@@ -49,11 +49,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "password_qogm",
-   "fieldtype": "Password",
-   "label": "Password"
-  },
-  {
    "fieldname": "specialization",
    "fieldtype": "Link",
    "label": "Specialization",
@@ -71,11 +66,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 19:11:20.839735",
+ "modified": "2025-07-11 18:22:42.111582",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "TrainerReg",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

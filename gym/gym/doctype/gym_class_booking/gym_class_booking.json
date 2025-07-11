@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "format:{email}",
+ "autoname": "autoincrement",
  "creation": "2025-07-09 16:54:39.290202",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -34,11 +33,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 17:26:06.210852",
+ "modified": "2025-07-11 15:18:32.844643",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "Gym Class Booking",
- "naming_rule": "Expression",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {

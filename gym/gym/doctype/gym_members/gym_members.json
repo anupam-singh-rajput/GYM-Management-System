@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{email}",
+ "autoname": "field:name1",
  "creation": "2025-07-08 12:31:15.485905",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -17,14 +17,15 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "role",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Role",
-   "options": "Trainer\nUser",
+   "options": "Gym Trainer\nGym Admin\nGym Member",
    "reqd": 1
   },
   {
@@ -46,11 +47,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 11:13:15.955149",
+ "modified": "2025-07-11 16:56:33.724626",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "Gym Members",
- "naming_rule": "Expression",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

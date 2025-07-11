@@ -1,65 +1,47 @@
 [
  {
-  "class_boooking": "5",
+  "class_boooking": "1",
   "docstatus": 0,
   "doctype": "Gym Class Booking",
-  "email": "anupam@gmail.com",
-  "modified": "2025-07-09 17:35:04.344959",
-  "name": "anupam@gmail.com",
-  "trainer_name": "Sneha Singh"
+  "email": "jay@gmail.com",
+  "modified": "2025-07-11 18:07:13.162099",
+  "name": 1,
+  "trainer_name": "Pradeep Sahoo"
  },
  {
   "class_boooking": "1",
   "docstatus": 0,
   "doctype": "Gym Class Booking",
   "email": "jay@gmail.com",
-  "modified": "2025-07-09 18:52:41.779108",
-  "name": "jay@gmail.com",
-  "trainer_name": "Jay Anjarlekar"
+  "modified": "2025-07-11 18:07:55.565429",
+  "name": 2,
+  "trainer_name": "Pradeep Sahoo"
  },
  {
   "class_boooking": "1",
   "docstatus": 0,
   "doctype": "Gym Class Booking",
-  "email": "sneha@gmail.com",
-  "modified": "2025-07-10 09:58:21.235333",
-  "name": "sneha@gmail.com",
-  "trainer_name": "Ronnie Coleman"
- },
- {
-  "class_boooking": "1",
-  "docstatus": 0,
-  "doctype": "Gym Class Booking",
-  "email": "pradeepto@gmail.com",
-  "modified": "2025-07-10 10:42:55.186245",
-  "name": "pradeepto@gmail.com",
-  "trainer_name": "Ronnie Coleman"
+  "email": "jay@gmail.com",
+  "modified": "2025-07-11 18:08:00.557874",
+  "name": 3,
+  "trainer_name": "Pradeep Sahoo"
  },
  {
   "class_boooking": "1",
   "docstatus": 0,
   "doctype": "Gym Class Booking",
   "email": "jigar@gmail.com",
-  "modified": "2025-07-10 10:45:55.211033",
-  "name": "jigar@gmail.com",
-  "trainer_name": "Ronnie Coleman"
+  "modified": "2025-07-11 18:32:06.224455",
+  "name": 4,
+  "trainer_name": "arnold schwarzenegger"
  },
  {
   "class_boooking": "5",
   "docstatus": 0,
   "doctype": "Gym Class Booking",
-  "email": "janhavi@gmail.com",
-  "modified": "2025-07-10 10:50:26.061910",
-  "name": "janhavi@gmail.com",
-  "trainer_name": "Dipti"
- },
- {
-  "class_boooking": "1",
-  "docstatus": 0,
-  "doctype": "Gym Class Booking",
-  "email": "akash@gmail.com",
-  "modified": "2025-07-10 10:52:11.719141",
-  "name": "akash@gmail.com",
-  "trainer_name": "Ronnie Coleman"
+  "email": "sneha@gmail.com",
+  "modified": "2025-07-11 18:35:23.843624",
+  "name": 5,
+  "trainer_name": "Sahana Jagnatha"
  }
 ]

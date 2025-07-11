@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:{email}",
+ "autoname": "format:M-{###}",
  "creation": "2025-06-25 16:43:47.016917",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -94,7 +94,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-10 10:14:55.423625",
+ "modified": "2025-07-11 15:18:09.018206",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "GYM Membership",
@@ -115,9 +115,7 @@
   }
  ],
  "row_format": "Dynamic",
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "email"
+ "states": []
 }

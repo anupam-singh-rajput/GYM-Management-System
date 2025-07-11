@@ -27,7 +27,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-10 10:34:16.553520",
+ "modified": "2025-07-11 15:19:33.414687",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "BMI",
@@ -48,9 +48,7 @@
   }
  ],
  "row_format": "Dynamic",
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "email"
+ "states": []
 }

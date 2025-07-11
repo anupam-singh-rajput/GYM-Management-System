@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{level}",
+ "autoname": "format:T-{###}",
  "creation": "2025-06-26 11:00:41.961002",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -26,7 +26,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 16:16:33.165081",
+ "modified": "2025-07-11 14:28:32.861199",
  "modified_by": "Administrator",
  "module": "GYM",
  "name": "WorkoutPlan",
@@ -47,9 +47,7 @@
   }
  ],
  "row_format": "Dynamic",
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "level"
+ "states": []
 }

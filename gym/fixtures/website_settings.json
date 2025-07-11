@@ -29,7 +29,7 @@
   "home_page": null,
   "indexing_authorization_code": null,
   "indexing_refresh_token": null,
-  "modified": "2025-07-10 13:38:23.630763",
+  "modified": "2025-07-11 15:23:22.598551",
   "name": "Website Settings",
   "navbar_search": 0,
   "navbar_template": null,
@@ -42,68 +42,7 @@
   "splash_image": null,
   "subdomain": null,
   "title_prefix": null,
-  "top_bar_items": [
-   {
-    "label": "BMI",
-    "open_in_new_tab": 0,
-    "parent": "Website Settings",
-    "parent_label": null,
-    "parentfield": "top_bar_items",
-    "parenttype": "Website Settings",
-    "right": 1,
-    "url": "/gym-management/bmi/new"
-   },
-   {
-    "label": "Trainer Booking",
-    "open_in_new_tab": 0,
-    "parent": "Website Settings",
-    "parent_label": null,
-    "parentfield": "top_bar_items",
-    "parenttype": "Website Settings",
-    "right": 1,
-    "url": "gym-management/gym-class-booking/new"
-   },
-   {
-    "label": "Trainer Rating",
-    "open_in_new_tab": 0,
-    "parent": "Website Settings",
-    "parent_label": null,
-    "parentfield": "top_bar_items",
-    "parenttype": "Website Settings",
-    "right": 1,
-    "url": "gym-management/trainer-rating/new"
-   },
-   {
-    "label": "Workout Plan",
-    "open_in_new_tab": 0,
-    "parent": "Website Settings",
-    "parent_label": null,
-    "parentfield": "top_bar_items",
-    "parenttype": "Website Settings",
-    "right": 1,
-    "url": "/gym-management/workout-plan/new"
-   },
-   {
-    "label": "Member Profile",
-    "open_in_new_tab": 0,
-    "parent": "Website Settings",
-    "parent_label": null,
-    "parentfield": "top_bar_items",
-    "parenttype": "Website Settings",
-    "right": 1,
-    "url": "/member-details"
-   },
-   {
-    "label": "Setting",
-    "open_in_new_tab": 0,
-    "parent": "Website Settings",
-    "parent_label": null,
-    "parentfield": "top_bar_items",
-    "parenttype": "Website Settings",
-    "right": 1,
-    "url": "/gym-management-system/gym-settings"
-   }
-  ],
+  "top_bar_items": [],
   "website_theme": "Standard",
   "website_theme_image_link": null
  }
