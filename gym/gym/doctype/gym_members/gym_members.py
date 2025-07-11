@@ -26,7 +26,7 @@ class GymMembers(Document):
 		"email": self.email,
 		"first_name": self.name1,
 		"user_type": user_type,
-		"send_welcome_email": 1,
+		"send_welcome_email": 0,
 		"new_password": self.password # 👈 Set the password here
 		})
 
