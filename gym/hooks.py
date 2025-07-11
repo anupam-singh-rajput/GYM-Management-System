@@ -251,7 +251,8 @@ website_route_rules = [
 ]
 
 fixtures = [
-
+    "Role",
+    "Custom DocPerm",
     "Client Script",
     "Property Setter",
     "Report",
@@ -282,6 +283,10 @@ fixtures = [
     },
     {
         "doctype": "Trainer Rating",
+        "filters": []
+    },
+    {
+        "doctype": "User",
         "filters": []
     },
     {
